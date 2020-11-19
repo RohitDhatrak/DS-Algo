@@ -11,7 +11,7 @@ public static void reverseArray(int arr[]) {
 public static void reverseArray(int arr[], int i, int j) {       
     if (i>=j)
         return;
-    recursiveFuction(arr, i + 1, j - 1);
+    reverseArray(arr, i + 1, j - 1);
     int temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
