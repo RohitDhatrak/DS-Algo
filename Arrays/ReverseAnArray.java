@@ -1,4 +1,4 @@
-// We use two pointers and swap the values
+// We use two pointers and keep swapping the values
 
 // Method 1 - Iterative Method  O(n)
 public static void reverseArray(int arr[]) {
