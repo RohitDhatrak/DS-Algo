@@ -1,6 +1,8 @@
 // We use two pointers and keep swapping the values
 
-// Method 1 - Iterative Method  O(n)
+// Method 1 - Iterative Method
+// Time Complexity O(n)
+// Space Complexity O(1)
 public static void reverseArray(int arr[]) {
     for (int i = 0, j = arr.length - 1; i < j; i++, j--) {   
         int temp = arr[i];
@@ -9,7 +11,9 @@ public static void reverseArray(int arr[]) {
     }
 }
     
-// Method 2 - Using a Recursive Fuction  O(n)
+// Method 2 - Using a Recursive Fuction
+// Time Complexity O(n)
+// Space Complexity O(1)
 public static void reverseArray(int arr[], int i, int j) {       
     if (i>=j)
         return;
