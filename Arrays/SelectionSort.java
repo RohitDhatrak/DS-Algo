@@ -2,7 +2,7 @@
 
 // Time Complexity O(n^2)
 // Space Complexity O(1)
-public static void SelectionSort(int [] arr){
+public static void selectionSort(int [] arr){
     for(int i = 0; i < arr.length - 1; i++){
         int minIndx = i;
         for(int j = i + 1; j < arr.length; j++){
