@@ -1,4 +1,5 @@
 // In each iteration we compare the i and i + 1 element and swap them if they are in wrong order
+
 // Time Complexity O(n^2)
 // Space Complexity O(1)
 public static void bubbleSort(int [] arr){
