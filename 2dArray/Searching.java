@@ -12,12 +12,15 @@ public static void search(int[][] arr,int key, int row, int column){
     while(n < row && m > 0){
         if(key == arr[n][m]){
             System.out.println("Element Found");
-        }else
+            flag = true;
+            break;
+        }else{
             if(arr[n][m] > key)
                 m--;
             else
                 n++;
-        if(!flag)
-            System.out.println("Element not Found");
+        }
     }
+    if(!flag)
+        System.out.println("Element not Found");
 }
