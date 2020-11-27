@@ -5,20 +5,20 @@
 // Space Complexity O(1)
 
 public static void search(int[][] arr,int key, int row, int column){
-    int n = 0;
-    int m = column - 1;
+    int r = 0;              // row
+    int c = column - 1;     // column
     boolean flag = false;
 
-    while(n < row && m > 0){
-        if(key == arr[n][m]){
+    while(r < row && c > 0){
+        if(key == arr[r][c]){
             System.out.println("Element Found");
             flag = true;
             break;
         }else{
-            if(arr[n][m] > key)
-                m--;
+            if(arr[r][c] > key)
+                c--;
             else
-                n++;
+                r++;
         }
     }
     if(!flag)
