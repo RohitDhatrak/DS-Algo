@@ -1,6 +1,9 @@
 // Searching an element in a sorted 2d array
 // We start from top right corner if the element is greater than the key we reduce the column and if it is lesser than the key we increment the row
 
+// Time Complexity O(n)
+// Space Complexity O(1)
+
 public static void search(int[][] arr,int key, int row, int column){
     int n = 0;
     int m = column - 1;
