@@ -2,7 +2,7 @@
 
 // Time Complexity O(n^2)
 // Space Complexity O(1)
-// In-place, not stable, not adaptive, not online
+// In-place, Stable, Adaptive, Not Online
 
 public static void bubbleSort(int [] arr){
     for(int i = 0; i < arr.length - 1; i++) {
