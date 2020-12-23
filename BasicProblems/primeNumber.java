@@ -5,7 +5,7 @@ public static String checkPrime(int n) {
         return "It's neither prime nor composite";
     if(n == 2)
         return "It's a prime number";
-    for(int i = 3; i <= Math.sqrt(n); i++)
+    for(int i = 2; i <= Math.sqrt(n); i++)
         if(n % i == 0)
             return "It's a composite number";
     return "It's a prime number";
