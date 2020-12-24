@@ -1,3 +1,4 @@
+// Multiply a 2D matrix
 // int[][] arr1 = new int[n1][n2];
 // int[][] arr2 = new int[n2][n3];
 // int[][] ans = new int[n1][n3];
