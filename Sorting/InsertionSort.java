@@ -1,4 +1,5 @@
 // We take an element from the unsorted part and insert it in the right place in the sorted part
+// Initially one elment would be sorted because a single elment is always sorted in itself
 
 // Time Complexity O(n^2)
 // Space Complexity O(1)
