@@ -1,4 +1,4 @@
-// Kadane's algorithm
+// Kadane's algorithm - used to find the maximum subarray sum
 // at every iteration we choose the greater number between arr[i] and currentSum + arr[i]
 // from the above statement we can conclude that whenever the currentSum becomes less than 0 we'll reset the currentSum 
 // because arr[i] will always be greater than currentSum + arr[i] if currentSum is negative
