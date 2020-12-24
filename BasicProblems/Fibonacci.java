@@ -1,3 +1,5 @@
+// Print the first n Fibonacci Numbers
+
 // we shift a and b with each iteration and keep printing a.
 // 0  1  1  2  3  5  8
 // a  b
