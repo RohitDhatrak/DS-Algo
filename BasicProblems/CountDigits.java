@@ -1,3 +1,5 @@
+// Count the number of digits in a number
+
 public static int countDigits(int num) {
     int count = 0;
     while (num != 0) {
