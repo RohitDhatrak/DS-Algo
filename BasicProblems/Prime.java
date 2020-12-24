@@ -1,3 +1,10 @@
+// We won't find any new factors for 36 after the root of the number
+// 1 * 36   |  36 * 1
+// 2 * 18   |  18 * 2
+// 3 * 12   |  12 * 3
+// 4 * 9    |   9 * 4
+// 6 * 6    |   6 * 6
+
 public static String checkPrime(int n) {
     if(n < 0)
         return "Invalid Input";
