@@ -1,4 +1,4 @@
-// We take an element and insert it in the right place
+// We take an element from the unsorted part and insert it in the right place in the sorted part
 
 // Time Complexity O(n^2)
 // Space Complexity O(1)
