@@ -1,5 +1,5 @@
 // Searching an element in a sorted 2d array
-// We start from top right corner or bottom left corner
+// We start from top right corner or bottom left corner (from other two corners elements only increase or decrease)
 // If the element is greater than the key we reduce the column and if it is lesser than the key we increment the row
 
 // Time Complexity O(n)
