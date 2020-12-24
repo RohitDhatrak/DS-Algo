@@ -1,3 +1,5 @@
+// Check if the number is prime or not
+
 // We won't find any new factors for 36 after the square root of the number
 // 1 * 36   |  36 * 1
 // 2 * 18   |  18 * 2
