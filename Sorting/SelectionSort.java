@@ -3,6 +3,7 @@
 // Time Complexity O(n^2)
 // Space Complexity O(1)
 // In-place, Not Stable, Not Adaptive, Not Online
+// We can make this algorihtm stable by shifting all elements to the right and putting the min element in the empty space.
 
 public static void selectionSort(int [] arr){
     for(int i = 0; i < arr.length - 1; i++){
