@@ -1,4 +1,4 @@
-// We use two pointers and keep swapping the values
+// We use two pointers and keep swapping the elements
 
 // Time Complexity O(n)
 // Space Complexity O(1)
