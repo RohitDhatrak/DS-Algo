@@ -1,5 +1,8 @@
 // Print the digits of a number from left to right
 
+// Time Complexity  O(n)
+// Space Complexity O(1)
+
 public static void printDigits(int num) {
     int count = 0;
     int temp = num;
