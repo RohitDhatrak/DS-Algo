@@ -4,3 +4,17 @@
 // To calculate inverse of a number we'll put 1 in the 5th place and 2 in the 3rd place doing so for all the digits
 // so the inverse would be 416253
 
+// Time Complexity  O(n)
+// Space Complexity O(1)
+
+public static int inverseOfANumber(int num) {
+        int ans = 0;
+        int count = 1;
+        while (num != 0) {
+            int power = num % 10;
+            num /= 10;
+            ans += count * Math.pow(10, power - 1);
+            count++;
+        }
+        return ans;
+    }
