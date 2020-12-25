@@ -7,6 +7,10 @@
 // 4 * 9    |   9 * 4
 // 6 * 6    |   6 * 6
 
+// Time Complexity  O(√n)
+// Space Complexity O(1)
+
+
 public static String checkPrime(int n) {
     if(n < 0)
         return "Invalid Input";
