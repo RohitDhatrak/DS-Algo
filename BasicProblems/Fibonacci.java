@@ -6,6 +6,9 @@
 //    a  b
 //       a  b
 
+// Time Complexity  O(n)
+// Space Complexity O(1)
+
 public static void printFibonacci(int n) {
     int a = 0;
     int b = 1;
