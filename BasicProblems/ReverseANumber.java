@@ -1,6 +1,6 @@
 // Reverse an integer number
 
-// Time Complexity  O(n)
+// Time Complexity  O(log10(num))
 // Space Complexity O(1)
 
 public static int reverseNumber(int num) {
