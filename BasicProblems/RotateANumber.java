@@ -2,7 +2,7 @@
 // The input can be greater than the number of digits
 
 // Time Complexity  O((log10(num))^2)
-// Space Complexity O(1)
+// Space Complexity O(log10(num))
 
 public static int rotateNumber(String num, int k) {
 
