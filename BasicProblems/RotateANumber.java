@@ -8,7 +8,7 @@ public static int rotateNumber(String num, int k) {
         k = -k;
         flag = false;
     }
-    while (k >= num.length())
+    while (k >= num.length())  // reducing the extra work if k is >= number of digits
         k -= num.length();
     if(k == 0)
         return Integer.parseInt(num);
