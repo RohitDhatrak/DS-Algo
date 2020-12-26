@@ -19,12 +19,12 @@ public static int rotateNumber(String num, int k) {
     String[] numArr = num.split("");
     for (int i = 0; i < k; i++) {
 
-        if (flag) {     // right shift
+        if (flag) {     // rotate right
             String temp = numArr[num.length() - 1];
             for (int j = num.length() - 1; j > 0; j--)
                 numArr[j] = numArr[j - 1];
             numArr[0] = temp;
-        } else {       // left shift
+        } else {       // rotate left
             String temp = numArr[0];
             for (int j = 0; j < num.length() - 1; j++)
                 numArr[j] = numArr[j + 1];
