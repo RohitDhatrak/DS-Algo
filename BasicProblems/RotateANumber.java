@@ -1,6 +1,9 @@
 // Rotate a number k times (if k is positive rotate right if negative rotate left)
 // The input can be greater than the number of digits
 
+// Time Complexity  O((log10(num))^2)
+// Space Complexity O(1)
+
 public static int rotateNumber(String num, int k) {
 
     boolean flag = true;
