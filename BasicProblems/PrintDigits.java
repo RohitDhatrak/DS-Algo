@@ -10,7 +10,7 @@ public static void printDigits(int num) {
         temp /= 10;
         count++;
     }
-    while (count != 0) {
+    while (count != 0) {    // 3000 will be a edge case if we check for num != 0
         int digit = num / (int)Math.pow(10, count - 1);
         num %= Math.pow(10, count - 1);
         count--;
