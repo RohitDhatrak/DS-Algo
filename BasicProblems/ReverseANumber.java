@@ -11,7 +11,7 @@ public static int reverseNumber(int num) {
         temp /= 10;
         count++;
     }
-    while (count != 0) {
+    while (num != 0) {
         int digit = num % 10;
         num /= 10;
         ans += digit * Math.pow(10, count - 1);
