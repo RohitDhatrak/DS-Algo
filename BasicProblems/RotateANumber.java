@@ -1,4 +1,4 @@
-// Rotate a number k times if k is positive rotate right if negative rotate left
+// Rotate a number k times (if k is positive rotate right if negative rotate left)
 // The input can be greater than the number of digits
 
 // Time complexity  O(k)
