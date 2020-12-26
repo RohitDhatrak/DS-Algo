@@ -1,5 +1,5 @@
 // Rotate a number k times (if k is positive rotate right if negative rotate left)
-// The input can be greater than the number of digits
+// k can be greater than the number of digits
 
 // Time Complexity  O((log10(num))^2)
 // Space Complexity O(log10(num))
