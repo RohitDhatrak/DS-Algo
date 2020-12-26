@@ -1,4 +1,4 @@
-### Optimized solutions
+### Questions with an optimal solution
 - [Rotate A Number](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/RotateANumber.java)
 - [Prime Number](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/PrimeNo.java)
 
