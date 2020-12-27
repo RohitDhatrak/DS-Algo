@@ -1,8 +1,8 @@
 // Rotate a number k times (if k is positive rotate right if negative rotate left)
 // k can be greater than the number of digits
 
-// Time Complexity  O((log10(num))^2)
-// Space Complexity O(log10(num))
+// Time Complexity  O(log10(num))
+// Space Complexity O(1)
 
 public static int rotateNumber(int num, int k) {
 
