@@ -1,6 +1,6 @@
 // Count the number of digits in a number
 
-// Time Complexity  O(log10(num))
+// Time Complexity  O(log(num))
 // Space Complexity O(1)
 
 public static int countDigits(int num) {
