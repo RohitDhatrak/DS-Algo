@@ -1,3 +1,5 @@
+The time complexity in some problems is log(num) because we are dividing by a scale of 10. Another way to look at it is to notice that the time complexity would be given by the number of the digits in the number which is approximately equal to log(num).
+
 ### Questions with an optimal solution
 - [Rotate A Number](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/RotateANumber.java)
 - [Prime Number](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/PrimeNo.java)
