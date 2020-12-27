@@ -1,6 +1,6 @@
 // Print the digits of a number from left to right
 
-// Time Complexity  O(log10(num))
+// Time Complexity  O(log(num))
 // Space Complexity O(1)
 
 public static void printDigits(int num) {
