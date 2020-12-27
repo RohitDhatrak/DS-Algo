@@ -1,40 +1,39 @@
 // Rotate a number k times (if k is positive rotate right if negative rotate left)
 // k can be greater than the number of digits
 
-// NOT THE OPTIMAL SOLUTION
 // Time Complexity  O((log10(num))^2)
 // Space Complexity O(log10(num))
 
-public static int rotateNumber(String num, int k) {
+public static int rotateNumber(int num, int k) {
 
-    boolean flag = true;
-    if (k < 0) {
+    int temp = num;
+    int size = 0;
+    while (temp != 0) {
+        temp /= 10;
+        size++;
+    }
+
+    if (size == 0)        // edge case num = 0
+        return num;
+
+    if (k < 0) {          // edge case if k is -ve and greater than length
         k = -k;
-        flag = false;
-    }
-    while (k >= num.length())  // reducing the extra work if k is >= number of digits
-        k -= num.length();
-    if(k == 0)
-        return Integer.parseInt(num);
-
-    String[] numArr = num.split("");
-    for (int i = 0; i < k; i++) {
-
-        if (flag) {     // rotate right
-            String temp = numArr[num.length() - 1];
-            for (int j = num.length() - 1; j > 0; j--)
-                numArr[j] = numArr[j - 1];
-            numArr[0] = temp;
-        } else {       // rotate left
-            String temp = numArr[0];
-            for (int j = 0; j < num.length() - 1; j++)
-                numArr[j] = numArr[j + 1];
-            numArr[num.length() - 1] = temp;
-        }
+        if (k >= size)
+            k %= size;
+        k = size - k;
     }
 
-    String str = "";
-    for (int i = 0; i < num.length(); i++)
-        str += numArr[i];
-    return Integer.parseInt(str);
+    if (k >= size)       // edge case if k is greater than length
+        k %= size;
+
+    if (k == 0)
+        return num;
+
+    int digits = num % (int)Math.pow(10, k);
+    num /= (int) Math.pow(10, k); 
+
+    digits *= Math.pow(10, (size - k));
+    num += digits;
+
+    return num;
 }
