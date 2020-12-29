@@ -1,4 +1,4 @@
-// the max frequency of a character in the string
+// find the character occuring max times in the string
 
 // Time Complexity  O(n)
 // Space Complexity O(1)
