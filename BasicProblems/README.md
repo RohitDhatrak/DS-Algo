@@ -1,4 +1,4 @@
-The time complexity in some problems is log(n) because we are dividing the number (ie the input) by a scale of 10. Another way to look at it is to notice that the time complexity would be given by the number of the digits in the number which is approximately equal to log(n).
+The time complexity in some problems is log(n) because we are dividing the number (ie the input) by a scale of 10. Or we could say that the time complexity would be given by the number of the digits in the number which is approximately equal to log(n).
 
 ### Questions with an optimal solution
 - [GCD and LCM](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/Gcd&Lcm.java)
