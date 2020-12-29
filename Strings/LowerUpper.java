@@ -1,5 +1,8 @@
 // convert a string to upper or lower case
 
+// Time Complexity  O(n)
+// Space Complexity O(1)
+
 public static String toLower(String str) {
     String result = "";
     for (int i = 0; i < str.length(); i++) {
