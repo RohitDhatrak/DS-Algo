@@ -5,6 +5,7 @@ The time complexity in some problems is log(n) because we are dividing the numbe
 - [GCD and LCM](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/Gcd&Lcm.java)
 - [Rotate A Number](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/RotateANumber.java)
 - [Prime Number](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/PrimeNo.java)
+- [Prime Factors](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/PrimeFactors.java)
 
 ### Questions with edge cases
 - [Rotate A Number](https://github.com/RohitDhatrak/DS-Algo/blob/main/BasicProblems/RotateANumber.java)
