@@ -9,7 +9,7 @@ public static void primeFactors(int n) {
                 n /= i;
                 break;
             }
-            if (i == Math.floor(Math.sqrt(n))) {
+            if (i == Math.floor(Math.sqrt(n))) {    // if we reach √n and still haven't found a factor then the number is prime
                 System.out.print(n + " ");
                 n /= n;
             }
