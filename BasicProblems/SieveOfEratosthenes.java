@@ -1,6 +1,6 @@
 // Sieve of Eratosthenes - gives prime numbers between 2 to n
 
-// Time Complexity  O()
+// Time Complexity  O(n*log(log(n)))
 // Space Complexity O(n)
 
 public static int[] sieve(int n) {
