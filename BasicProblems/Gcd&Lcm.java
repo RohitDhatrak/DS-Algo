@@ -1,7 +1,7 @@
 // Calculate GCD and LCM of a and b
 
-Time Complexity  O( )
-Space Complexity O(1)
+// Time Complexity  O(log(min(m,n)))
+// Space Complexity O(1)
 
 
 // Eulclids Algorithm for GCD
