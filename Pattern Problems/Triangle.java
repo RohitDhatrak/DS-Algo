@@ -1,5 +1,4 @@
 /*
-Print this pattern
 * 
 * *
 * * * 
