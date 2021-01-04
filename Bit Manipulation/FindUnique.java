@@ -18,7 +18,7 @@ public static int[] find2Unique(int[] arr) {
         diff = diff ^ arr[i];                  // this will give the diff btw the 2 unique num
     }
     for (int i = 0; i < arr.length; i++) {
-        if ((arr[i] & diff) > 0)               // we'll check all the elements that have the diff
+        if ((arr[i] & diff) > 0)               // we'll check all the numbers that have the diff
             oneNo = oneNo ^ arr[i];            // and xor them to find one of the unique numbers
     }
     arr[0] = oneNo; 
