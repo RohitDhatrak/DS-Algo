@@ -4,7 +4,7 @@
 // 2. Take as input a number n, representing the number of bulbs.
 // 3. Print all the bulbs that will be on after the nth fluctuation in voltage.
 
-export function benjaminBulbs(n) {
+function benjaminBulbs(n) {
     for (let i = 1; i * i <= n; i++) 
         console.log(i * i);
 }
