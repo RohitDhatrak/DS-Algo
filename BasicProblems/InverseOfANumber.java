@@ -7,12 +7,12 @@
 // Time Complexity  O(log(n))
 // Space Complexity O(1)
 
-public static int inverseOfANumber(int num) {
-    int ans = 0;
-    int count = 1;
+function inverseOfANumber(num) {
+    let ans = 0;
+    let count = 1;
     while (num != 0) {
-        int power = num % 10;
-        num /= 10;
+        let power = num % 10;
+        num = Math.floor(num / 10);
         ans += count * Math.pow(10, power - 1);
         count++;
     }
