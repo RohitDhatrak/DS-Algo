@@ -6,5 +6,6 @@ function pythagoreanTriplet(a, b, c) {
         return Math.pow(hypo, 2) == Math.pow(b, 2) + Math.pow(c, 2);
     else if (b == hypo)
         return Math.pow(hypo, 2) == Math.pow(a, 2) + Math.pow(c, 2);
-    else return Math.pow(hypo, 2) == Math.pow(b, 2) + Math.pow(a, 2);
+    else 
+        return Math.pow(hypo, 2) == Math.pow(b, 2) + Math.pow(a, 2);
 }
