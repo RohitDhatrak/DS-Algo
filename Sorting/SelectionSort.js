@@ -5,15 +5,15 @@
 // In-place, Not Stable, Not Adaptive, Not Online
 // We can make this algorithm stable by shifting all elements to the right and putting the min element in the empty slot.
 
-public static void selectionSort(int [] arr){
-    for(int i = 0; i < arr.length - 1; i++){
-        int minIndx = i;
-        for(int j = i + 1; j < arr.length; j++){
-            if(arr[minIndx] > arr[j])
+function selectionSort(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        let minIndx = i;
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[minIndx] > arr[j]) 
                 minIndx = j;
         }
-        int temp = arr[i];
+        let temp = arr[i];
         arr[i] = arr[minIndx];
-        arr[minIndx] = temp; 
+        arr[minIndx] = temp;
     }
 }
