@@ -3,10 +3,11 @@
 // Time Complexity  O(log(n))
 // Space Complexity O(1)
 
-public static int countDigits(int num) {
-    int count = 0;
+function countDigits(num) {
+    let count = 0;
     while (num != 0) {
-        num /= 10;
+        num = Math.floor(num / 10);
+
         count++;
     }
     return count;
