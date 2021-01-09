@@ -4,9 +4,9 @@
 // 2. Take as input a number n, representing the number of bulbs.
 // 3. Print all the bulbs that will be on after the nth fluctuation in voltage.
 
-public static void benjaminBulbs(int n) {
-    for(int i = 1; i * i <= n; i++)
-        System.out.println(i * i);
+export function benjaminBulbs(n) {
+    for (let i = 1; i * i <= n; i++) 
+        console.log(i * i);
 }
 
 // All the bulbs having an odd no of factors remain on it the end
