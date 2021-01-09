@@ -9,12 +9,12 @@
 // Time Complexity  O(n)
 // Space Complexity O(1)
 
-public static void printFibonacci(int n) {
-    int a = 0;
-    int b = 1;
-    for (int i = 0; i < n; i++) {
-        System.out.print(a + " ");
-        int nextNum = a + b;
+function printFibonacci(n) {
+    let a = 0;
+    let b = 1;
+    for (let i = 0; i < n; i++) {
+        console.log(a + " ");
+        let nextNum = a + b;
         a = b;
         b = nextNum;
     }
