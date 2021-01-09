@@ -1,8 +1,8 @@
 // Find the unique number in the array (every other number occurs twice)
 
-public static int findUnique(int[] arr) {
-    int num = 0;
-    for (int i = 0; i < arr.length; i++) {
+function findUnique(arr) {
+    let num = 0;
+    for (let i = 0; i < arr.length; i++) {
         num = num ^ arr[i];
     }
     return num;
