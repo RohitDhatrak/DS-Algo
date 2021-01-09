@@ -9,14 +9,14 @@
 # # # #
 */
 
-public static void chessboard(int n) {
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            if (i % 2 == 0 && j % 2 != 0)
-                System.out.print(" " + "#");
-            if (i % 2 != 0 && j % 2 == 0)
-                System.out.print("#" + " ");
+function chessboard(n) {
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            if (i % 2 == 0 && j % 2 != 0) 
+                process.stdout.write(" " + "#");
+            if (i % 2 != 0 && j % 2 == 0) 
+                process.stdout.write("#" + " ");
         }
-        System.out.println();
+        console.log();
     }
 }
