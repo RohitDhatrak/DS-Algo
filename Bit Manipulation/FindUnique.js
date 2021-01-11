@@ -22,8 +22,8 @@ function find2Unique(arr) {
             // we'll check all the numbers that have the diff
             oneNo = oneNo ^ arr[i]; // and xor them to find one of the unique numbers
     }
-    ans[1] = oneNo;
-    ans[0] = oneNo ^ diff; // by applying xor to the number and the diff we get the second unique number
+    ans[0] = oneNo;
+    ans[1] = oneNo ^ diff; // by applying xor to the number and the diff we get the second unique number
     return ans;
 }
 
