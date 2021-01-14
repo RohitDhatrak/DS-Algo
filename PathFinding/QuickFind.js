@@ -6,23 +6,21 @@
 
 class QuickFind {
     constructor(n) {
-        this.arr = [];
-        this.n = n;
-        for (let i = 1; i <= this.n; i++) 
-            this.arr[i - 1] = i;
+        this._arr = [];
+        for (let i = 1; i <= n; i++) this._arr[i - 1] = i;
     }
 
     union(a, b) {
-        if (this.arr[a] != this.arr[b]) {
-            for (let i = 0; i < this.n; i++) {
-                if (i != a && this.arr[i] == this.arr[a])
-                    this.arr[i] = this.arr[b];
+        if (this._arr[a] != this._arr[b]) {
+            for (let i = 0; i < this._arr.length; i++) {
+                if (i != a && this._arr[i] == this._arr[a])
+                    this._arr[i] = this._arr[b];
             }
-            this.arr[a] = this.arr[b];
+            this._arr[a] = this._arr[b];
         }
     }
 
     connected(a, b) {
-        return this.arr[a] == this.arr[b];
+        return this._arr[a] == this._arr[b];
     }
 }
