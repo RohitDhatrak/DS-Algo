@@ -1,7 +1,7 @@
 // union() - connect two points
 // connected() - checks if two points are connected
 
-// Time Complexity: initialize - O(n), Union - O(n), Find - O(1)
+// Time Complexity: initialize - O(n), union - O(n), connected - O(1)
 // Space Complexity - O(n)
 
 class QuickFind {
