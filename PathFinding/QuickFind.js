@@ -7,7 +7,7 @@
 class QuickFind {
     constructor(n) {
         this._arr = [];
-        for (let i = 1; i <= n; i++) this._arr[i - 1] = i;
+        for (let i = 0; i < n; i++) this._arr[i] = i;
     }
 
     union(a, b) {
