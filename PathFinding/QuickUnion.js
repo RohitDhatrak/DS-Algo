@@ -1,24 +1,29 @@
+// union() - connect two points
+// connected() - checks if two points are connected
+
+// Time Complexity: initialize - O(n), union - O(n), connected - O(n)
+// Space Complexity - O(n)
+
 class QuickUnion {
     constructor(n) {
-        this.arr = [];
-        this.n = n;
-        for (let i = 0; i < this.n; i++) this.arr[i] = i;
+        this._arr = [];
+        for (let i = 0; i < n; i++) this._arr[i] = i;
     }
 
-    root(node) {
-        while (this.arr[node] != node) {
-            node = this.arr[node];
+    _root(node) {
+        while (this._arr[node] != node) {
+            node = this._arr[node];
         }
         return node;
     }
 
     union(child, head) {
-        child = root(child);
-        head = root(head);
-        this.arr[child] = head;
+        child = this._root(child);
+        head = this._root(head);
+        this._arr[child] = head;
     }
 
     connected(child, head) {
-        return this.root(child) == this.root(head);
+        return this._root(child) == this._root(head);
     }
 }
