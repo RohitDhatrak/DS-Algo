@@ -1,7 +1,8 @@
 // union() - connect two points
 // connected() - checks if two points are connected
 
-// Time Complexity: initialize - O(n), union - O(n), connected - O(n)
+// Time Complexity: initialize - O(n), union - O(n), connected - O(n) 
+// (both union and connected use the _root method which takes linear time(n) in the worst case)
 // Space Complexity - O(n)
 
 class QuickUnion {
