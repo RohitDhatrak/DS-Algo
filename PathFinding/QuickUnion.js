@@ -29,4 +29,8 @@ class QuickUnion {
     connected(child, head) {
         return this._root(child) == this._root(head);
     }
+
+    getCount() {
+        return this._N;
+    }
 }
