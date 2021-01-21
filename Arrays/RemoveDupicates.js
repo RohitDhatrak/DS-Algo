@@ -1,5 +1,8 @@
 // Leetcode - 26
 
+// Time Complexity  O(n)
+// Space Complexity O(1)
+
 var removeDuplicates = function(nums) {
     if (nums.length == 0) return 0;
     let nextPosition = 1;
