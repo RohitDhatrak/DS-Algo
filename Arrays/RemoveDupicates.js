@@ -1,4 +1,4 @@
-// Leetcode - 26
+// Leetcode - 26. Remove Duplicates from Sorted Array
 
 // Time Complexity  O(n)
 // Space Complexity O(1)
