@@ -1,6 +1,6 @@
 // Rotate an array left d times
 
-// Time Complexity  O(d * n)
+// Time Complexity  O(logN * n)
 // Space Complexity O(1)
 
 function rotateLeft(d, arr) {
