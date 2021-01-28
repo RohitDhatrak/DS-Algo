@@ -1,5 +1,3 @@
-
-
 const _find = new WeakMap();
 const _N = new WeakMap();
 let _arr = new WeakMap();
@@ -31,12 +29,12 @@ class QuickFind {
         }
     }
 
-    connected(a, b) {
+    isConnected(a, b) {
         let arr = _arr.get(this);
         return arr[a] == arr[b];
     }
 
-    count() {
+    get count() {
         return _N.get(this);
     }
 }
