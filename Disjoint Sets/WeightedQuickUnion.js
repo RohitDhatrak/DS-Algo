@@ -35,7 +35,6 @@ class WeightedQuickUnion {
                 arr[a] = b;
             }
         }
-        console.log(arr);
         _N.set(this, N - 1);
     }
 
