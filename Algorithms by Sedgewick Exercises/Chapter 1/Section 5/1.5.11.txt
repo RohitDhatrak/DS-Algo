@@ -1,0 +1,3 @@
+The Quick Find algorithm requires us to loop through the whole array to find the id's of the components that we need to modify.
+Even if we take the decision according to the size we would still have to loop through the entire array, the number of assignment opertaions would be 
+reduced but there is no asymptotic improvement i.e it is still linear time.
