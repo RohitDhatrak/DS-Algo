@@ -10,4 +10,5 @@
 
 The height of the tree is 4 which is greater than the maximum possible height of the tree given by logN
 log 8 = 3 < 4
-The sub tree which starts from 6 cannot be built using weighted union you can try building it on paper using the weighted quick union algorithm for a better understanding
+The sub tree which starts from 6 cannot be built using weighted union you can try building it on paper 
+using the weighted quick union algorithm for a better understanding
