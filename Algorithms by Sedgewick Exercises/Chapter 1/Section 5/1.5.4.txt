@@ -1,4 +1,5 @@
-The lines represent the array after each operation and the number of array accesses required for each iteration respectively for the refernce input and worst case input.
+The lines represent the array after each operation and the number of array accesses required for each iteration respectively 
+for the refernce input and worst case input.
 (same array is used to keep track of the size)
 
 Reference Input:
