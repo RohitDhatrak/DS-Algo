@@ -1,0 +1,14 @@
+When i = p, id[i] will be pointing to id[p] and it will be replaced by id[q].
+So now we'll be comparing a different value in the if condition
+
+This can be fixed by adding another codition in the coditional statement which will check if i!=p
+if(i != p && id[i] == id[p]){
+  id[i] = id[q];
+}
+id[p] = id[q]; 
+
+or we can store the value of id[p] in variable and use that in the coditional statement
+let temp = id[p];
+if(id[i] == temp){
+  id[i] = id[q];
+}
