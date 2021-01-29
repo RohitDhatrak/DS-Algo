@@ -1,0 +1,14 @@
+total for-loop iterations = no of input pairs x no of sites 
+= 10^6 x 10^9 
+= 10^15
+
+Total no of machine instructions = total for-loop iterations x instructions required per iteration 
+= 10^15 x 10 
+= 10^16
+
+Machine executes 10^9 instructions per second
+total no of seconds = total no of machine instructions / iterations done per second
+= 10^16 / 10^9 
+= 10^7
+
+10^7 seconds = 166,666 minutes = 2,777 hours = ~115 days
