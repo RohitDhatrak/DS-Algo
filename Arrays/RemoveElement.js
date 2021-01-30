@@ -3,6 +3,8 @@
 // Time Complexity  O(n^2)
 // Space Complexity O(1)
 
+// optimal solution T: O(n) S: O(1)
+
 var removeElement = function(nums, val) {
     let length = 0;
     for(let i = 0; i < nums.length; i++){
