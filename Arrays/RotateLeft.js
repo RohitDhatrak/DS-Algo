@@ -1,7 +1,9 @@
 // Rotate an array left d times
 
-// Time Complexity  O(logN * n)
+// Time Complexity  O(logn * n)    (because d = logn)
 // Space Complexity O(1)
+
+// optimal solution T: O(n) S: O(n)
 
 function rotateLeft(d, arr) {
     d %= arr.length;
