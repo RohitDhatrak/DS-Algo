@@ -4,12 +4,12 @@
 // Space Complexity O(n)
 
 var containsDuplicate = function(nums) {
-    let count = {};
+    const map = new Map();
     for (let i = 0; i < nums.length; i++) {
-        if (count[nums[i]] == undefined) {
-            count[nums[i]] = 1;
-        } else {
+        if (map.has(nums[i])) {
             return true;
+        } else {
+            map.set(nums[i], 1);
         }
     }
     return false;
