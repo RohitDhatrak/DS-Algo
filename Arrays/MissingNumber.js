@@ -13,10 +13,10 @@ var missingNumber = function(nums) {
 var missingNumber = function(nums) {
     let ans;
     for(let i = 0; i < nums.length; i++){
-        ans = ans ^ nums[i];
+        ans ^= nums[i];
     }
     for(let i = 0; i <= nums.length; i++){
-        ans = ans ^ i;
+        ans ^= i;
     }
     return ans
 };
