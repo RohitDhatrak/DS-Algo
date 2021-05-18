@@ -1,5 +1,8 @@
 // 744. Find Smallest Letter Greater Than Target
 
+// Time Complexity  O(logn)
+// Space Complexity O(1)
+
 var nextGreatestLetter = function(letters, target) {
     let start = 0;
     let end = letters.length - 1;
