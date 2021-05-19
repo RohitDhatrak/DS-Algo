@@ -6,7 +6,7 @@
 var peakIndexInMountainArray = function(arr) {
     let lhs = 0;
     let rhs = arr.length - 1;
-    while(true){
+    while(lhs <= rhs){
         const middle = Math.trunc((lhs + rhs) / 2);
         if(arr[middle + 1] < arr[middle] && arr[middle - 1] < arr[middle]){
             return middle;
