@@ -1,4 +1,4 @@
-// Write a recursive function that returns the sum of all the even numbers in a object which may contain nested objects.
+// Write a recursive function that returns the sum of all the even numbers in an object which may contain nested objects.
 
 // var obj1 = {
 //   outer: 2,
