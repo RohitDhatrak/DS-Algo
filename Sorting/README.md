@@ -6,3 +6,5 @@
 4. Online - Can sort a list as it receives it
 5. Simple Implementation
 6. Efficient for small datasets
+
+[Video Explanation](https://youtu.be/4gW6P5A1gxs)
