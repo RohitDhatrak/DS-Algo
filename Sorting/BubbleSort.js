@@ -8,7 +8,8 @@
 // Space               O(1)                         O(1)                       O(1)
 
 // Parameter to consider while selectinga sorting algorithm
-// In Place, Stable, Adaptive, Not Online, Simple Implementation, Efficient for small datasets
+// In Place, Stable, Adaptive, Simple Implementation, Efficient for small datasets
+// Not Online
 
 function bubbleSort(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
