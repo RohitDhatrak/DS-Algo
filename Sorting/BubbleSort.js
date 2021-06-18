@@ -7,7 +7,6 @@
 
 // Space               O(1)                         O(1)                       O(1)
 
-// Parameter to consider while selectinga sorting algorithm
 // Stable, Adaptive
 // Not Online
 
