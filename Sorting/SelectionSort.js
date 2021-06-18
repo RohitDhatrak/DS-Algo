@@ -5,7 +5,7 @@
 // Space Complexity O(1)
 
 // Not Stable, Not Adaptive, Not Online
-// We can make this algorithm stable by shifting all elements to the right and putting the min element in the empty slot.
+// We can make this algorithm stable by rotating all elements to the right and putting the min element in the empty slot.
 
 function selectionSort(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
