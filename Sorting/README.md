@@ -1,8 +1,7 @@
-# Parameters to consider while selecting a sorting algorithm
+# Other Parameters to consider apart from time and space complexity while selecting a sorting algorithm
 
-1. In place - Space Complexity is O(1)
-2. Stable - Does not change the relative order of the equal elements in the initial array
-3. Adaptive - Efficient for data that is substantially sorted
-4. Online - Can sort a list as it receives it
+1. Stable - Does not change the relative order of the equal elements in the initial array
+2. Adaptive - Efficient for data that is substantially sorted
+3. Online - Can sort a list as it receives it
 
 [Video Explanation](https://youtu.be/4gW6P5A1gxs)
