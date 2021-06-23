@@ -1,7 +1,7 @@
+// Implementation 1
+
 // We split the array in half and then recursively splits the halves untill we have an array of one element.
 // A single element is always sorted in itself so we can recursively merge the parts to get a sorted array.
-
-// Implementation 1
 
 // Time Complexity  O(nlogn)
 // Space Complexity O(nlogn)
