@@ -1,21 +1,29 @@
 function pivotHelper(arr, startIdx = 0, endIdx = arr.length) {
+    function swap(elem1, elem2) {
+        [arr[elem1], arr[elem2]] = [arr[elem2], arr[elem1]];
+    }
     const pivot = arr[startIdx];
     let pivotIndx = startIdx;
     for (let i = startIdx + 1; i < endIdx; i++) {
         if (pivot > arr[i]) {
             pivotIndx++;
-            [arr[i], arr[pivotIndx]] = [arr[pivotIndx], arr[i]];
+            swap(i, pivotIndx);
         }
     }
-    [arr[startIdx], arr[pivotIndx]] = [arr[pivotIndx], arr[startIdx]];
-    return pivotIndx
+    swap(startIdx, pivotIndx);
+    return pivotIndx;
 }
 
-function quickSort(arr, startIdx = 0, endIdx = arr.length){
-    if(startIdx < endIdx){
+function quickSort(arr, startIdx = 0, endIdx = arr.length) {
+    if (startIdx < endIdx) {
         const pivotIdx = pivotHelper(arr, startIdx, endIdx);
-        quickSort(arr, startIdx, pivotIdx)
-        quickSort(arr, pivotIdx + 1, endIdx);
+        if (endIdx - pivotIdx < pivotIdx - startIdx) {
+            quickSort(arr, pivotIdx + 1, endIdx);
+            quickSort(arr, startIdx, pivotIdx);
+        } else {
+            quickSort(arr, startIdx, pivotIdx);
+            quickSort(arr, pivotIdx + 1, endIdx);
+        }
     }
     return arr;
 }
