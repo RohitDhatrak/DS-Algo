@@ -17,3 +17,14 @@ function rotateLeft(d, arr) {
 
 // Time Complexity  O(n)
 // Space Complexity O(n)
+function rotateLeft(d, arr) {
+    d %= arr.length;
+    const rotatedArray = [];
+    for (let i = d; i < arr.length; i++) {
+        rotatedArray[i - d] = arr[i];
+    }
+    for (let i = 0, j = arr.length - d; i < d; i++, j++) {
+        rotatedArray[j] = arr[i];
+    }
+    return rotatedArray;
+}
