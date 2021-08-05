@@ -1,6 +1,6 @@
 // Rotate an array left d times
 
-// Time Complexity  O(logn * n)    (because d = logn)
+// Time Complexity  O(d * n)
 // Space Complexity O(1)
 
 // optimal solution T: O(n) S: O(n)
