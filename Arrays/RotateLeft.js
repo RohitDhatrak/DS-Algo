@@ -2,7 +2,6 @@
 
 // Time Complexity  O(d * n)
 // Space Complexity O(1)
-
 function rotateLeft(d, arr) {
     d %= arr.length;
     for (let i = 0; i < d; i++){
