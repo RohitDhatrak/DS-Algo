@@ -3,8 +3,6 @@
 // Time Complexity  O(d * n)
 // Space Complexity O(1)
 
-// optimal solution T: O(n) S: O(n)
-
 function rotateLeft(d, arr) {
     d %= arr.length;
     for (let i = 0; i < d; i++){
@@ -16,3 +14,6 @@ function rotateLeft(d, arr) {
     }
     return arr;
 }
+
+// Time Complexity  O(n)
+// Space Complexity O(n)
