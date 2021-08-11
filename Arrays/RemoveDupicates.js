@@ -4,15 +4,13 @@
 // Space Complexity O(1)
 
 var removeDuplicates = function(nums) {
-    if (nums.length == 0) return 0;
-    let nextPosition = 1;
-    let currentNum = nums[0];
+    if (!nums.length) return 0;
+    let lastPos = 0;
     let length = 1;
-    for(let i = 1; i < nums.length; i++){
-        if(nums[i] > currentNum){
-            nums[nextPosition++] = nums[i];
-            currentNum = nums[i];
-            length++;
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] > nums[lastPos]) {
+            nums[++lastPos] = nums[i];
+            length++
         }
     }
     return length;
