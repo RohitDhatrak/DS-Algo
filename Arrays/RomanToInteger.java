@@ -1,5 +1,8 @@
 // 13. Roman to Integer
 
+// Time Complexity  O(n)
+// Space Complexity O(1)
+
 public static int romanToInt(String s) {
     int total = 0;
     for (int i = 0; i < s.length(); i++) {
