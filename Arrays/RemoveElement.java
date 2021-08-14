@@ -1,3 +1,8 @@
+// Leetcode - 27. Remove Element
+
+// Time Complexity  O(n)
+// Space Complexity O(1)
+
 public static int removeElement(int[] nums, int val) {
     int j = 0;
     for (int i = 0; i < nums.length; i++) {
