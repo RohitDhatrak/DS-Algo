@@ -1,5 +1,8 @@
 // 13. Roman to Integer
 
+// Time Complexity  O(n)
+// Space Complexity O(1)
+
 var romanToInt = function (s) {
     const roman = {
         I: 1,
