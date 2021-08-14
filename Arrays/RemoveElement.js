@@ -1,26 +1,19 @@
 // Leetcode - 27. Remove Element
 
-// Time Complexity  O(n^2)
+// Time Complexity  O(n)
 // Space Complexity O(1)
 
-// optimal solution T: O(n) S: O(1)
-
 var removeElement = function(nums, val) {
-    let length = 0;
-    for(let i = 0; i < nums.length; i++){
-        if(nums[i] == val){
-            for(let j = i + 1; j < nums.length; j++){
-                if(nums[j]!=val){
-                    let temp  = nums[i];
-                    nums[i] = nums[j];
-                    nums[j] = temp;
-                    length++;
-                    break;
-                }
-            }
+    let j = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[j] == val && nums[i] != val) {
+            const temp = nums[j];
+            nums[j] = nums[i];
+            nums[i] = temp;
         }
-        else
-            length++;
+        if (nums[j] != val) {
+            j++;
+        }
     }
-    return length;
+    return j;
 };
