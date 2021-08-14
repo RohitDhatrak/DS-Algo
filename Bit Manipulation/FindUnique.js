@@ -1,4 +1,5 @@
 // Find the unique number in the array (every other number occurs twice)
+// 136. Single Number
 
 function findUnique(arr) {
     let num = 0;
