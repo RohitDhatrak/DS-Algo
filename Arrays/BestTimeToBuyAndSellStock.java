@@ -4,15 +4,15 @@
 // Space Complexity O(1)
 
 public static int maxProfit(int[] prices) {
-    int buy = 0;
+    int minPrice = prices[0];
     int maxProfit = 0;
-
-    for (int i = 0; i < prices.length - 1; i++) {
-        if (prices[i + 1] < prices[buy]) {
-            buy = i + 1;
+    for (int i = 1; i < prices.length; i++) {
+        if (prices[i] <= minPrice) {
+            minPrice = prices[i];
         } else {
-            if (prices[i + 1] - prices[buy] > maxProfit) {
-                maxProfit = prices[i + 1] - prices[buy];
+            int newProfit = prices[i] - minPrice;
+            if (newProfit > maxProfit) {
+                maxProfit = newProfit;
             }
         }
     }
