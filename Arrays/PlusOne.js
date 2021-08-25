@@ -1,22 +1,24 @@
 // 66. Plus One
 
-// Time Complexity  O()
-// Space Complexity O()
+// Time Complexity  O(n)
+// Space Complexity O(1) / O(n)
 
 var plusOne = function (digits) {
-    function addOne(digits, n) {
-        if (n == 0 && digits[n] == 9) {
-            digits[n] = 0;
-            digits.unshift(1);
+    let power = digits.length - 1;
+    while (power >= 0) {
+        if (digits[power] === 9) {
+            if (power === 0) {
+                digits[power] = 0;
+                digits.unshift(1);
+            } else {
+                digits[power] = 0;
+            }
+            power--;
+        } else {
+            digits[power]++;
             return digits;
         }
-        if (digits[n] == 9) {
-            digits[n] = 0;
-            return addOne(digits, n - 1);
-        }
-        digits[n] += 1;
-        return digits;
     }
-    return addOne(digits, digits.length - 1);
-};
 
+    return digits;
+};
