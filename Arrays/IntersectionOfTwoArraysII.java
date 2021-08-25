@@ -31,5 +31,5 @@ class Solution {
     }
 }
 
-// If arrays are sorted we can use 2 pointer to build the reult array O(n + m), O(1)
+// If arrays are sorted we can use 2 pointers to build the result array O(n + m), O(1)
 // If arrays are sorted and one is larger than the other we can use binary serach O(nlogm), O(1)
