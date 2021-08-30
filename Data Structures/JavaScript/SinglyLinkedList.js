@@ -171,11 +171,4 @@ class SinglyLinkedList {
     }
 }
 
-const list = new SinglyLinkedList();
-list.push(34);
-list.push(1);
-list.push(2);
-list.push(3);
-console.log(list.get(3));
-
 module.exports = SinglyLinkedList;
