@@ -1,5 +1,3 @@
-const { expect } = require("@jest/globals");
-const expectExport = require("expect");
 const SinglyLinkedList = require("../SinglyLinkedList");
 
 const list = new SinglyLinkedList();
