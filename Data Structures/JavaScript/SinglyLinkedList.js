@@ -109,7 +109,7 @@ class SinglyLinkedList {
 
     /* Change the value of the node at the given position O(n) */
     set(position, value) {
-        let node = this.#getNode(position);
+        const node = this.#getNode(position);
         if (node) {
             node.value = value;
             return true;
@@ -119,7 +119,7 @@ class SinglyLinkedList {
 
     /* Insert a node at the given position O(1) or O(n) */
     insert(position, value) {
-        if (position >= this.length || position < 0) {
+        if (position >= this.#length || position < 0) {
             return undefined;
         } else if (position === 0) {
             this.unshift(value);
@@ -135,7 +135,7 @@ class SinglyLinkedList {
 
     /* Remove the node at the given position O(1) or O(n) */
     remove(position) {
-        if (position >= this.length || position < 0) {
+        if (position >= this.#length || position < 0) {
             return undefined;
         } else if (position === 0) {
             this.shift();
