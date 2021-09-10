@@ -15,4 +15,5 @@ var binarySearch = function (nums, target) {
             end = mid - 1;
         }
     }
+    return -1;
 };
