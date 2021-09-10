@@ -12,7 +12,7 @@ var solution = function(isBadVersion) {
         let start = 1;
         let end = n;
 
-        while (start <= end) {
+        while (start <= end) { // = is necessary
             const mid = Math.floor((start + end) / 2);
             if (isBadVersion(mid)) {
                 end = mid - 1;
@@ -21,6 +21,6 @@ var solution = function(isBadVersion) {
             }
         }
 
-        return end + 1;
+        return end + 1; // or return start
     };
 };
