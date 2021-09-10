@@ -1,4 +1,4 @@
-// Leetcode - 35. Search Insert Position
+// 35. Search Insert Position
 
 // Time Complexity  O(logn)
 // Space Complexity O(1)
