@@ -21,6 +21,6 @@ var solution = function(isBadVersion) {
             }
         }
 
-        return end + 1; // or return start
+        return end + 1; // or return start;
     };
 };
