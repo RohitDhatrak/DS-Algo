@@ -17,5 +17,5 @@ var searchInsert = function(nums, target) {
             start = mid + 1;
         }
     }
-    return end+1;  // or start
+    return end+1;  // or return start
 };
