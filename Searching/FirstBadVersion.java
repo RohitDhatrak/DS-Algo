@@ -7,7 +7,7 @@ public int firstBadVersion(int n) {
     int start = 1;
     int end = n;
 
-    while (start <= end) {
+    while (start <= end) { // = is necessary
         int mid = start + (end - start) / 2; // Overflow issues
         if (isBadVersion(mid)) {
             end = mid - 1;
@@ -16,5 +16,5 @@ public int firstBadVersion(int n) {
         }
     }
 
-    return end + 1;
+    return end + 1; // or return start;
 }
