@@ -1,4 +1,7 @@
+// 3. Longest Substring Without Repeating Characters
 
+// Time Complexity  O(n)
+// Space Complexity O(n)
 
 public int lengthOfLongestSubstring(String s) {
     if (s.length() == 0) return 0;
