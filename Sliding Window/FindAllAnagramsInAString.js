@@ -46,7 +46,7 @@ var findAnagrams = function(s, p) {
         checkIfCharIsPartOfP(s[i], true);
     }
 
-    while (begin < s.length) {
+    while (end <= s.length) {
         if (counter === 0) {
             ans.push(begin);
         }
