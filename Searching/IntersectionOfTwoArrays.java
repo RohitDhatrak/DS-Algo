@@ -1,6 +1,6 @@
 // 349. Intersection of Two Arrays
 
-// Time Complextiy  O(logn) [assuming arrays are sorted]
+// Time Complextiy  O(nlogm) [assuming arrays are sorted]
 // Space Complexity O(1)
 
 class Solution {
