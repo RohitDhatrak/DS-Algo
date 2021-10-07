@@ -1,7 +1,8 @@
 // 349. Intersection of Two Arrays
 
+// assuming arrays are sorted
 // Solution 1: Using 2 pointers
-// Time Complexity:  O(n) assuming arrays are sorted
+// Time Complexity:  O(n)
 // Space Complexity: O(1)
 
 public int[] intersection(int[] nums1, int[] nums2) {
