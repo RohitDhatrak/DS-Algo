@@ -3,7 +3,6 @@
 // Time Complexity  O(n+m)
 // Space Complexity O(1)
 
-
 public boolean isLongPressedName(String name, String typed) {
     if (typed.length() < name.length()) return false;
     int namePtr = 0;
