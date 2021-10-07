@@ -1,6 +1,8 @@
 // 349. Intersection of Two Arrays
 
-// Time Complextiy  O(nlogm) [assuming arrays are sorted]
+// assuming arrays are sorted
+// Solution 1: using binary search
+// Time Complextiy  O(nlogm)
 // Space Complexity O(1)
 
 var intersection = function(nums1, nums2) {
