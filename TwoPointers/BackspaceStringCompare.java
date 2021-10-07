@@ -1,7 +1,7 @@
 // 844. Backspace String Compare
 
 // Solution 1: using 2 pointer
-// Time Complexity  O(n)
+// Time Complexity  O(n+m)
 // Space Complexity O(1)
 
 public static boolean backspaceCompare(String s, String t) {
