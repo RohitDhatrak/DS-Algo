@@ -37,3 +37,6 @@ function binarySearch(nums, target) {
     }
     return false
 };
+
+// Solution 2: in arrays folder
+// Solution 3: in 2 pointer folder
