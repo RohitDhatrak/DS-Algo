@@ -1,5 +1,6 @@
 // 349. Intersection of Two Arrays
 
+// Solution 1: Using 2 pointers
 // Time Complexity:  O(n) assuming arrays are sorted
 // Space Complexity: O(1)
 
