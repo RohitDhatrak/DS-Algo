@@ -31,3 +31,6 @@ function goToNextValue(pointer, array) {
     }
     return pointer;
 }
+
+// Solution 2: in arrays folder
+// Solution 3: in search folder
