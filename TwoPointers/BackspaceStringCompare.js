@@ -1,5 +1,6 @@
 // 844. Backspace String Compare
 
+// Solution 1: using 2 pointer
 // Time Complexity  O(n)
 // Space Complexity O(1)
 
