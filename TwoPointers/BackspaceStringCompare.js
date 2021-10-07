@@ -52,3 +52,5 @@ var backspaceCompare = function (s, t) {
     }
     return true;
 };
+
+// Solution 2: in stack and queue folder
