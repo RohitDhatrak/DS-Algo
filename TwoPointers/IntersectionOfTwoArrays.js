@@ -1,6 +1,8 @@
 // 349. Intersection of Two Arrays
 
-// Time Complexity:  O(n) assuming arrays are sorted
+// assuming arrays are sorted
+// Solution 1: Using 2 pointers
+// Time Complexity:  O(n)
 // Space Complexity: O(1)
 
 var intersection = function(nums1, nums2) {
