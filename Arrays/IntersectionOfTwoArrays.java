@@ -24,3 +24,6 @@ public int[] intersection(int[] nums1, int[] nums2) {
     }
     return output;
 }
+
+// Solution 2: in search folder
+// Solution 3: in 2 pointer folder
