@@ -36,3 +36,6 @@ public int goToNextValue(int pointer, int[] array) {
     }
     return pointer;
 }
+
+// Solution 2: in arrays folder
+// Solution 3: in search folder
