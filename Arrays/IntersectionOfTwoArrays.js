@@ -19,3 +19,6 @@ var intersection = function (nums1, nums2) {
     }
     return output;
 };
+
+// Solution 2: in search folder
+// Solution 3: in 2 pointer folder
