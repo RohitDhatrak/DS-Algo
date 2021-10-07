@@ -47,3 +47,6 @@ class Solution {
         
     }
 }
+
+// Solution 2: in arrays folder
+// Solution 3: in 2 pointer folder
