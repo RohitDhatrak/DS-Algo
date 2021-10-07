@@ -1,5 +1,6 @@
 // 349. Intersection of Two Arrays
 
+// Solution 1: Using a hash map
 // Time Complexity:  O(n)
 // Space Complexity: O(n)
 
