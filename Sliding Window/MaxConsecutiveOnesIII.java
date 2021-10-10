@@ -3,6 +3,7 @@
 // Time Complexity  O(n)
 // Space Complexity O(1)
 
+// Solution 1: sliding window (faster because of less ops)
 public int longestOnes(int[] nums, int k) {
     int startPoint = 0;
     int endPoint = 0;
@@ -26,3 +27,5 @@ public int longestOnes(int[] nums, int k) {
 
     return maxLength;
 }
+
+// Solution 2: check two pointers folder
