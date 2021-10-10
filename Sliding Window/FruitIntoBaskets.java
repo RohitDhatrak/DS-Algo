@@ -4,29 +4,37 @@
 // Space Complexity O(1)
 
 public int totalFruit(int[] fruits) {
-    int maxFruits = 0;
-    int lastFruit = 0;
     int startPoint = 0;
-    int count = 0;
-    int[] types = {fruits[0], fruits[0]};
+    int endPoint = 0;
+    HashMap<Integer, Integer> fruitBucket = new HashMap<>();
+    int currentCount = 0;
+    int maxCount = 0;
 
-    while (startPoint < fruits.length) {
-        int currentFruit = fruits[startPoint];
-        if (currentFruit == types[0] || currentFruit == types[1]) {
-            count++;
-            startPoint++;
-        } else if (types[0] == types[1]) {
-            types[1] = currentFruit;
-            lastFruit = startPoint;
-            count++;
-            startPoint++;
+    while (startPoint < fruits.length && endPoint < fruits.length) {
+        int fruit = fruits[endPoint];
+        if (fruitBucket.containsKey(fruit)) {
+            fruitBucket.put(fruit, fruitBucket.get(fruit) + 1);
+            endPoint++;
+            currentCount++;
+        } else if (fruitBucket.size() < 2) {
+            fruitBucket.put(fruit, 1);
+            endPoint++;
+            currentCount++;
         } else {
-            startPoint = lastFruit;
-            types[0] = types[1];
-            count = 0;
+            int fruitToBeRemoved = fruits[startPoint];
+            int count = fruitBucket.get(fruitToBeRemoved);
+
+            if (count == 1) {
+                fruitBucket.remove(fruitToBeRemoved);
+            } else {
+                fruitBucket.put(fruitToBeRemoved, count - 1);
+            }
+            currentCount--;
+            startPoint++;
         }
-        maxFruits = Math.max(maxFruits, count);
+
+        maxCount = Math.max(currentCount, maxCount);
     }
 
-    return maxFruits;
+    return maxCount; 
 }
