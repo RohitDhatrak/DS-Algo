@@ -4,29 +4,37 @@
 // Space Complexity O(1)
 
 var totalFruit = function (fruits) {
-    let maxFruits = 0;
-    let lastFruit = 0;
     let startPoint = 0;
-    let count = 0;
-    let types = [fruits[0], fruits[0]];
+    let endPoint = 0;
+    let fruitBucket = new Map();
+    let currentCount = 0;
+    let maxCount = 0;
 
-    while (startPoint < fruits.length) {
-        let currentFruit = fruits[startPoint];
-        if (currentFruit === types[0] || currentFruit === types[1]) {
-            count++;
-            startPoint++;
-        } else if (types[0] === types[1]) {
-            types[1] = currentFruit;
-            lastFruit = startPoint;
-            count++;
-            startPoint++;
+    while (startPoint < fruits.length && endPoint < fruits.length) {
+        const fruit = fruits[endPoint];
+        if (fruitBucket.has(fruit)) {
+            fruitBucket.set(fruit, fruitBucket.get(fruit) + 1);
+            endPoint++;
+            currentCount++;
+        } else if (fruitBucket.size < 2) {
+            fruitBucket.set(fruit, 1);
+            endPoint++;
+            currentCount++;
         } else {
-            startPoint = lastFruit;
-            types[0] = types[1];
-            count = 0;
+            const fruitToBeRemoved = fruits[startPoint];
+            const count = fruitBucket.get(fruitToBeRemoved);
+
+            if (count === 1) {
+                fruitBucket.delete(fruitToBeRemoved);
+            } else {
+                fruitBucket.set(fruitToBeRemoved, count - 1);
+            }
+            currentCount--;
+            startPoint++;
         }
-        maxFruits = Math.max(maxFruits, count);
+
+        maxCount = Math.max(currentCount, maxCount);
     }
 
-    return maxFruits;
+    return maxCount;
 };
