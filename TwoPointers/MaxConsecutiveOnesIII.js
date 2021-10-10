@@ -3,7 +3,7 @@
 // Time Complexity  O(n)
 // Space Complexity O(1)
 
-// Solution 1: two pointer approach
+// Solution 1: two pointer approach (slower because of more ops)
 var longestOnes = function(nums, k) {
     let flipsLeft = k;
     let maxCount = 0;
