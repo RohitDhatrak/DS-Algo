@@ -3,6 +3,7 @@
 // Time Complexity  O(n)
 // Space Complexity O(1)
 
+// Solution 1: sliding window (faster because of less ops)
 var longestOnes = function (nums, k) {
     let startPoint = 0;
     let endPoint = 0;
@@ -26,3 +27,5 @@ var longestOnes = function (nums, k) {
 
     return maxLength;
 };
+
+// Solution 2: check two pointers folder
