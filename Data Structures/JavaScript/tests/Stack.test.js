@@ -17,9 +17,10 @@ test("Testing push method of the stack", () => {
 test("Testing pop method of the stack", () => {
     stack.pop();
     expect(stack.size).toBe(2);
-    stack.pop();
+    expect(stack.pop()).toBe(10);
     stack.pop();
     expect(stack.size).toBe(0);
+    expect(stack.pop()).toBe(undefined);
     stack.push(120);
     stack.push(100);
     expect(stack.size).toBe(2);
@@ -33,5 +34,6 @@ test("Testing peek method of the stack", () => {
     expect(stack.size).toBe(1);
     stack.pop();
     expect(stack.size).toBe(0);
+    expect(stack.peek()).toBe(undefined);
 });
 //
