@@ -10,3 +10,16 @@ function memoize(func) {
         return result;
     };
 }
+
+function flattenArray(array) {
+    const newArray = [];
+    for (const element of array) {
+        if (Array.isArray(element)) {
+            newArray.push(...flattenArray(element));
+        } else {
+            newArray.push(element);
+        }
+    }
+
+    return newArray;
+}
