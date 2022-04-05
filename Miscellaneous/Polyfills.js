@@ -53,15 +53,37 @@ Function.prototype.myBind = function myBind(thisArg, ...args) {
     };
 };
 
-function memoize(func) {
-    const cache = {};
-    return function memoizedFunction(...args) {
-        const stringifiedArgs = JSON.stringify(args);
-        if (cache[stringifiedArgs]) {
-            return cache[stringifiedArgs];
+Promise.myAll = function myAll(promises) {
+    const results = [];
+    let resolvedPromises = 0;
+
+    if (promises.length === 0) {
+        return Promise.resolve(results);
+    }
+
+    return new Promise((resolve, reject) => {
+        for (let i = 0; i < promises.length; i++) {
+            if (promises[i]?.then) {
+                promises[i]
+                    .then((data) => {
+                        results[i] = data;
+                        resolvedPromises++;
+
+                        if (resolvedPromises >= promises.length) {
+                            resolve(results);
+                        }
+                    })
+                    .catch((err) => {
+                        reject(err);
+                    });
+            } else {
+                results[i] = promises[i];
+                resolvedPromises++;
+
+                if (resolvedPromises >= promises.length) {
+                    resolve(results);
+                }
+            }
         }
-        const result = func(...args);
-        cache[stringifiedArgs] = result;
-        return result;
-    };
-}
+    });
+};
