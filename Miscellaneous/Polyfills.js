@@ -87,3 +87,100 @@ Promise.myAll = function myAll(promises) {
         }
     });
 };
+
+Promise.myAllSettled = function myAllSettled(promises) {
+    const results = [];
+    let resolvedPromises = 0;
+
+    if (promises.length === 0) {
+        return Promise.resolve(results);
+    }
+
+    return new Promise((resolve, reject) => {
+        for (let i = 0; i < promises.length; i++) {
+            if (promises[i]?.then) {
+                promises[i]
+                    .then((value) => {
+                        results[i] = {
+                            status: "fulfilled",
+                            value,
+                        };
+                    })
+                    .catch((reason) => {
+                        results[i] = {
+                            status: "rejected",
+                            reason,
+                        };
+                    })
+                    .finally(() => {
+                        resolvedPromises++;
+
+                        if (resolvedPromises >= promises.length) {
+                            resolve(results);
+                        }
+                    });
+            } else {
+                Promise.resolve(promises[i])
+                    .then((value) => {
+                        results[i] = {
+                            status: "fulfilled",
+                            value,
+                        };
+                    })
+                    .finally(() => {
+                        resolvedPromises++;
+
+                        if (resolvedPromises >= promises.length) {
+                            resolve(results);
+                        }
+                    });
+            }
+        }
+    });
+};
+
+Promise.myRace = function myRace(promises) {
+    return new Promise((resolve, reject) => {
+        for (const promise of promises) {
+            if (promise?.then) {
+                promise
+                    .then((data) => resolve(data))
+                    .catch((error) => reject(error));
+            } else {
+                Promise.resolve(promise).then((data) => resolve(data));
+            }
+        }
+    });
+};
+
+Promise.myAny = function myAny(promises) {
+    const errors = [];
+    let rejectedPromises = 0;
+
+    return new Promise((resolve, reject) => {
+        for (const [index, promise] of Object.entries(promises)) {
+            if (promise?.then) {
+                promise
+                    .then((result) => resolve(result))
+                    .catch((error) => {
+                        errors[index] = error;
+                        rejectedPromises++;
+
+                        if (rejectedPromises >= promises.length) {
+                            reject(errors);
+                        }
+                    });
+            } else {
+                Promise.resolve(promise).then((result) => resolve(result));
+            }
+        }
+    });
+};
+
+Promise.myResolve = function myResolve(value) {
+    return new Promise((resolve) => resolve(value));
+};
+
+Promise.myReject = function myReject(value) {
+    return new Promise((_, reject) => reject(value));
+};
