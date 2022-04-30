@@ -4,11 +4,13 @@
 // Space Complexity O(n)
 
 function twoSum(nums, target) {
-    let temp = new Map();
-    for (let i = 0; i < nums.length; i++) {
-        if (temp.has(target - nums[i])) {
-            return [i, temp.get(target - nums[i])];
+    const map = new Map();
+    
+    for(let [i, num] of nums.entries()){
+        if(map.has(target - num)){
+            return [map.get(target - num), i];
+        } else{
+            map.set(num,i);
         }
-        temp.set(nums[i], i);
     }
 };
